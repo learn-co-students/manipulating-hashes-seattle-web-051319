@@ -6,8 +6,9 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
-
-  
-
+  new = []
+  groceries.each do |key, value|
+    new.concat(value)
+  end
+  return new 
 end
